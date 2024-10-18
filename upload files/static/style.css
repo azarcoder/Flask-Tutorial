@@ -1,0 +1,25 @@
+.input
+{
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    margin-bottom: 2%;
+    padding: 8px;
+}
+
+.success
+{
+    background-color: lightgreen;
+    color: darkgreen;
+    border: 2px solid green;
+    text-align: center;
+    font-size: 22px;
+}
+
+.error
+{
+    background-color: lightcoral;
+    color: darkred;
+    border: 2px solid red;
+    text-align: center;
+    font-size: 22px;
+}

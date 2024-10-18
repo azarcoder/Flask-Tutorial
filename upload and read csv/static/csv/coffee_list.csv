@@ -1,0 +1,11 @@
+coffee_name,small,medium,large,price,availability
+Cappuccino,Yes,Yes,Yes,3.5,Available
+Espresso,Yes,Yes,No,2.5,Available
+Latte,Yes,Yes,Yes,4.0,Available
+Americano,Yes,Yes,Yes,2.75,Available
+Mocha,Yes,Yes,Yes,4.25,Available
+Macchiato,Yes,Yes,No,3.75,Available
+Flat White,Yes,Yes,Yes,3.0,Available
+Cold Brew,Yes,Yes,Yes,3.25,Available
+Affogato,Yes,No,No,3.5,Available
+Irish Coffee,Yes,Yes,Yes,5.0,Available

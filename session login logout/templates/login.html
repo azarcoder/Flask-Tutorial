@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error
+        {
+            background-color: lightcoral;
+            color: darkred;
+            border: 2px solid red;
+            text-align: center;
+            font-size: 22px;
+        }
+        div 
+        {
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+        {% for category, message  in messages %}
+            <div class="messages {{category}}">{{message}}</div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <form action="/" method="post">
+        <div>
+            <label for="">Username</label>
+            <input type="text" name="uname">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="upass">
+        </div>
+        <button>Login</button>
+    </form>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+<script>
+    $(document).ready(()=>{
+        $(".messages").hide(3000);
+    });
+</script>
+</body>
+</html>
